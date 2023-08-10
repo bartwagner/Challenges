@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="all--page">
+            <div class="information--personal">
+                <img src="Image/wagner.jpg">
+                <h1>Hi, my name is Wagner</h1>
+                <h2>Fun facts about me:</h2>
+                <ul>
+                    <li>38 years old</li>
+                    <li>Live in Victoria CA</li>
+                    <li>I love old video games</li>
+                </ul>
+                <p>Please connect with me on <a href="https://www.linkedin.com/in/wagnergentilferreiradearaujo/" taget="_blank">LinkedIn here.</a></p>
+                <form method="post">
+                    <input type="text" id="textinput" placeholder="Enter e-mail...">
+                </form>
+                <button onclick="sendEmail()">Join newsletter</button>
+            </div>
+            <div class="select--object">
+                <main className='main--form'>
+                    <h3>Have fun exchanging the formatting of the site</h3>
+                    <form className='form'>
+                        <label class="form--label">Kind of font</label>
+                        <select class="combo"
+                            onchange="favouriteMovieGenre(this.value);"
+                        >
+                            <option value="regular" selected="selected">Regular</option>  
+                            <option value="space">Space</option>  
+                            <option value="scary">Scary</option>  
+                            <option value="military">Military</option>  
+                            <option value="romantic">Romantic</option>  
+                            <option value="cowboy">Cowboy</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="superhero">Superhero</option>  
+                        </select>
+                    </form>
+                    <form className='form'>
+                        <label class="form--label">Colors</label>
+                        <select class="combo"
+                            onchange="favouriteFruit(this.value);"
+                        >
+                            <option value="regular" selected="selected">Regular</option>  
+                            <option value="watermelon">Watermelon</option>  
+                            <option value="tomato">Tomato</option>  
+                            <option value="banana">Banana</option>  
+                            <option value="orange">Orange</option>  
+                            <option value="avocado">Avocado</option>
+                            <option value="blueberry">Blueberry</option>
+                        </select>
+                    </form>
+                    <form className='form'>
+                        <label class="form--label">Colors(Dark or Light)</label>
+                        <select class="combo"
+                            onchange="favouriteMode(this.value);"
+                        > 
+                            <option value="dark" selected="selected">Dark</option>  
+                            <option value="light">Light</option>
+                        </select>
+                    </form>
+                    <form className='form'>
+                        <label class="form--label">Style photo</label>
+                        <select class="combo"
+                            onchange="favouriteEdgeStyle(this.value);"
+                        >
+                            <option value="round" selected="selected">Round</option>  
+                            <option value="sharp">Sharp</option>
+                            <option value="soft">Soft</option>
+                        </select>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
