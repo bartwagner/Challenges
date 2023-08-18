@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 2% 15%;
+}
+
+.title {
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.main-img {
+    width: 80%;
+    box-shadow: 0px 2px 5px lightgray;
+}
+
+.path {
+    width: 90%;
+    color: #565959;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.main-book-cover {
+    width: 50%;
+}
+
+.ratings {
+    width: 30%;
+}
+
+.content-main {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
