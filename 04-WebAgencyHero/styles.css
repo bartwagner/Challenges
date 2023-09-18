@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-image: url("images/faded-office.png");
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: #020202;
+}
+
+.main {
+    padding: 5% 60% 0 10%;
+}
+
+.main-business {
+    font-weight: 800;
+    font-size: 65px;
+}
+
+.main-description {
+    font-weight: 400;
+    font-size: 33px;
+}
+
+.underline {
+    border-bottom: 6px solid #0ea5e9;
+}
