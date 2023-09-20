@@ -25,5 +25,11 @@ body {
 }
 
 .btn {
-    
+    background-color: #0ea5e9;
+    color:azure;
+    border: none;
+    width: 45%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bolder;
 }
