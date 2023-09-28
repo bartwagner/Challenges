@@ -1,0 +1,48 @@
+:root {
+    /*-- BACKGROUND and BORDER-IMAGE--*/
+    --wooden: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/wooden.jpg);
+    --forest: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/forest.jpg);
+    --sweets: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/sweets1.jpg);
+    --bubbles: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/bubbles.jpg);
+    --crackle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/crackle.jpg);
+    --sparkle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/sparkle.jpg);
+    --rainbow: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-paint.jpg);
+    --smoke: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-smoke.jpg);
+    --nightsky: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/nightsky.jpg);
+    --sunset: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/sunset.jpg);
+
+    /*------------ COLORS ------------*/
+    --blood: #8a0303;
+    --slime: #228B22;
+    --gloom: #2B363B;
+    --candy: #ee698e;
+    --purple: #7B1E7A;
+    --blue: #2176AE;
+    --olive: #A6C48A;    
+    --royal: #0A1045;
+    --lilac: #B8AED6;
+    --snow: #f4f9e9;
+    
+    /*------------ FONTS -------------*/
+    --scary-font: 'Metal Mania';
+    --typewriter-font: 'Inconsolata';
+    --funny-font: 'Balsamiq Sans';
+    --curly-font: 'Pacifico';
+    --simple-font: 'Noto Sans HK';
+    --funky-font: 'MuseoModerno';
+    --sweet-font: 'Lobster';
+
+    /*----------- COLUMN -------------*/
+    --1: 1;
+    --2: 2;
+    --3: 3;
+    --4: 4;
+    --5: 5;
+
+    /*-------------GAP ---------------*/
+    --01cm: 0.1cm;
+    --02cm: 0.2cm;
+    --03cm: 0.3cm;
+    --04cm: 0.4cm;
+    --05cm: 0.5cm;
+}
