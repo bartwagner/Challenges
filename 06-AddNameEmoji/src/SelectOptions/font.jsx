@@ -1,0 +1,30 @@
+export default [
+    {
+        value:"simple-font",
+        labelOption:"Simple"
+    },
+    {
+        value:"scary-font",
+        labelOption:"Scary"
+    },
+    {
+        value:"typewriter-font",
+        labelOption:"Typewriter"
+    },
+    {
+        value:"funny-font",
+        labelOption:"Funny"
+    },
+    {
+        value:"curly-font",
+        labelOption:"Curly"
+    },
+    {
+        value:"funky-font",
+        labelOption:"Funky"
+    },
+    {
+        value:"sweet-font",
+        labelOption:"Sweet"
+    }
+]

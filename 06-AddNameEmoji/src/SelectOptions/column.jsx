@@ -1,0 +1,22 @@
+export default [
+    {
+        value:"1",
+        labelOption:"1"
+    },
+    {
+        value:"2",
+        labelOption:"2"
+    },
+    {
+        value:"3",
+        labelOption:"3"
+    },
+    {
+        value:"4",
+        labelOption:"4"
+    },
+    {
+        value:"5",
+        labelOption:"5"
+    }
+]
