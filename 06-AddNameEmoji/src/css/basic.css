@@ -71,12 +71,81 @@ html {
     align-items: center;
 }
 
-select{
+.select-option{
     margin: 0;
     margin-bottom: 3px;
     width: 160px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
 }
 
 option{
-    color:black;
+    color:white;
+}
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.active{
+    display:flex;
+}
+
+.active .modal{
+    animation: modal .4s;
+}
+
+.input-label{
+    font-size: 30px;
+    margin-bottom: 3%;
+    color: black;
+}
+
+.input-name {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    width: 50%;
+}
+
+.modal-component {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0, 0);
+    }
+}
+
+@media (max-width: 500px){
+    .modal {
+        padding: 10px;
+        width: 80%
+    }
 }

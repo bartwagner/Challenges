@@ -1,11 +1,11 @@
 import React from 'react'
 import Option from './Option'
-import background from '../SelectOptions/background'
-import photo from '../SelectOptions/photo'
-import color from '../SelectOptions/color'
-import font from '../SelectOptions/font'
-import column from '../SelectOptions/column'
-import gap from '../SelectOptions/gap'
+import background from './SelectOptions/background'
+import photo from './SelectOptions/photo'
+import color from './SelectOptions/color'
+import font from './SelectOptions/font'
+import column from './SelectOptions/column'
+import gap from './SelectOptions/gap'
 
 function SelectOption(props){
 
@@ -80,7 +80,7 @@ function SelectOption(props){
     return(
         <div className='div-select'>
             <label className="form-label">{props.label} </label>
-            <select value={selectValue} onChange = {e => selectChangeValue(e.target.value)}>
+            <select className='select-option' value={selectValue} onChange = {e => selectChangeValue(e.target.value)}>
                 {optionValue}
             </select>
 

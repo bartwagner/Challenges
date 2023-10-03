@@ -43,6 +43,24 @@ function App(props) {
     document.documentElement.style.setProperty(prop, value)
   }
 
+
+
+  const modal = document.querySelector('.modal-container')
+
+  openModal()
+  function openModal(){
+    modal.classList.add('active')
+  }
+
+  function closeModal(){
+    modal.classList.remove('active')
+  }
+
+
+
+
+
+
   /*------- This hook displays the photos when you open the website -------*/
   useEffect(() => {
     const photosUrl = selectPhoto ? `${url}&query=${selectPhoto}` : url;
@@ -65,8 +83,20 @@ function App(props) {
       })
   }
 
+
+
+
   return (
     <div className="box">
+      <div className='modal-container'>
+        <div className='modal'>
+          <h2 className='input-label'>Input your Name</h2>
+          <div className='modal-component'>
+            <input className='input-name' type="text" id="fname" name="fname" />
+            <button className='btn-submit' onClick={''}>Submit</button>
+          </div>
+        </div>
+      </div>
       <h2>{props.emoji}</h2>
       <h1>{props.name}'s website</h1>
       <SelectOption
