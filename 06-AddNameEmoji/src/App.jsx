@@ -45,6 +45,10 @@ function App(props) {
 
 
 
+
+
+
+
   const modal = document.querySelector('.modal-container')
 
   openModal()
@@ -56,8 +60,18 @@ function App(props) {
     modal.classList.remove('active')
   }
 
+  const [isActive, setIsActive] = React.useState(false);
+  const closeModal = () => {
+     setIsContainerActive(false);
+  };  
+  const openModal = () => {
+     setIsContainerActive(true);
+  };
 
 
+
+
+  
 
 
 
@@ -88,6 +102,11 @@ function App(props) {
 
   return (
     <div className="box">
+
+
+
+
+
       <div className='modal-container'>
         <div className='modal'>
           <h2 className='input-label'>Input your Name</h2>
@@ -97,6 +116,13 @@ function App(props) {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
       <h2>{props.emoji}</h2>
       <h1>{props.name}'s website</h1>
       <SelectOption
