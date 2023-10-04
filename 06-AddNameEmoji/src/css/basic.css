@@ -1,17 +1,26 @@
+html{
+    padding: 0px, 0px;
+}
+
 body {
     background: var(--background) no-repeat center center fixed;
-    padding-top: 15px;
     color: var(--main-color);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: var(--simple-font);
+    margin: 0px;
 }
 
 .grid {
    column-count: var(--column);
    column-gap: var(--gap);
+}
+
+.container{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .item {
@@ -29,11 +38,6 @@ h1 {
     margin-top: 0;
     text-align: center;
     font-size: 50px;
-}
-
-
-html {
-    padding: 0 20px; 
 }
 
 .img {
@@ -55,7 +59,7 @@ html {
 }
 
 .caption a {
-    color: white;
+    color: #fff;
 }
 
 .item:hover .caption {
@@ -66,9 +70,25 @@ html {
     width: 180px;
     height: 24px;
 }
+.modal-container .form-label{
+    display:flex;
+    color: #000;
+    width: auto;
+    padding-right: 1%;
+}
+
+.modal-content {
+    display:flex;
+    flex-direction: column;
+}
+
 .div-select{
     display: flex;
     align-items: center;
+}
+.modal-container .div-select{
+    display:flex;
+    justify-content: center;
 }
 
 .select-option{
@@ -76,67 +96,46 @@ html {
     margin-bottom: 3px;
     width: 160px;
     border-radius: 6px;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
+}
+.modal-container .select-option{
+    background-color: #fff;
+    width: 90px;
+    text-align: center;
+    color:#000;
 }
 
 option{
-    color:white;
+    color:#fff;
 }
 
 .modal-container{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    width: 100vw;
-    position: fixed;
-    top: 30px;
-    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
     z-index: 999;
+    padding-bottom: 100%;
+    background-color: rgba(0,0,0, 0.9);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal{
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    background-color: white;
+    margin-top: 5%;
+    padding: 4%;
+    background-color: #fff;
     border-radius: 10px;
-    width: 30%;
-}
-
-.active{
-    display:flex;
-}
-
-.active .modal{
-    animation: modal .4s;
+    width: 40%;
 }
 
 .input-label{
     font-size: 30px;
-    margin-bottom: 3%;
-    color: black;
+    margin-bottom: 5%;
+    color: #000;
 }
 
 .input-name {
@@ -150,23 +149,5 @@ option{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 5%;
-}
-
-@keyframes modal {
-    from{
-        opacity: 0;
-        transform: translate(0, -60px, 0);
-    }
-    to{
-        opacity: 1;
-        transform: translate(0, 0, 0);
-    }
-}
-
-@media (max-width: 500px){
-    .modal {
-        padding: 10px;
-        width: 80%
-    }
+    margin-top: 3%;
 }

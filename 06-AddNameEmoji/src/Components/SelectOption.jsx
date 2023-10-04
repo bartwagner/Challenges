@@ -6,6 +6,7 @@ import color from './SelectOptions/color'
 import font from './SelectOptions/font'
 import column from './SelectOptions/column'
 import gap from './SelectOptions/gap'
+import emoji from './SelectOptions/emoji'
 
 function SelectOption(props){
 
@@ -66,7 +67,7 @@ function SelectOption(props){
         selectValue = props.selectColumn
         selectChangeValue = props.setSelectColumn
     }
-    else{
+    else if(props.id == 'gap'){
         const gapSelect = gap.map(item => {
             return(
                 <Option {...item}/>
@@ -75,6 +76,16 @@ function SelectOption(props){
         optionValue = gapSelect
         selectValue = props.selectGap
         selectChangeValue = props.setSelectGap
+    }
+    else if(props.id == 'emoji'){
+        const emojiSelect = emoji.map(item => {
+            return(
+                <Option {...item}/>
+            )
+        })
+        optionValue = emojiSelect
+        selectValue = props.isEmoji
+        selectChangeValue = props.setIsEmoji
     }
 
     return(
