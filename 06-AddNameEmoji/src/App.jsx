@@ -18,15 +18,12 @@ function App() {
   let [selectFont,setSelectFont]     = useState("simple-font");        /*--------------- set the font ---------------*/
   let [selectColumn,setSelectColumn] = useState("2");                  /*--------------set the columns --------------*/
   let [selectGap,setSelectGap]       = useState("02cm");               /*------------- set the grid gap -------------*/
-  
-  
   const [isModalVisible, setIsModalVisible] = useState(true);          /*-------------set the modal true-------------*/
   const [isEmoji, setIsEmoji] = useState('🎉');                        /*---------------set the emoji ---------------*/
   const [isForm, setIsForm] = useState({
     name: ''
   });                                                                  /*------------set the form website------------*/
-  
-  const [emptyValue, setEmptyValue] = useState(false);
+  const [emptyValue, setEmptyValue] = useState(false);                 /*------- set the form is empty or not -------*/
 
 
   /*------------------ It Changes the website background ------------------*/
@@ -54,7 +51,7 @@ function App() {
     document.documentElement.style.setProperty(prop, value)
   }
 
-  /*----------------- This hook displays the photos when you open the website -----------------*/
+  /*------- This hook displays the photos when you open the website -------*/
   useEffect(() => {
     const photosUrl = selectPhoto ? `${url}&query=${selectPhoto}` : url;
     if(selectPhoto != "-"){
@@ -67,7 +64,8 @@ function App() {
     }
   }, [selectPhoto, url]);
 
-  /*-- This interface checks if the response is correct and sets the photos(setPhotos(data)) --*/
+  /*----------------This interface checks if the response is ----------------
+  --------------correct and sets the photos(setPhotos(data)) --------------*/
   const loadData = (options) => {
     fetch(options.url)
       .then(function(response){
@@ -78,24 +76,19 @@ function App() {
       })
   }
 
-  /*-- this set the form --*/
+  /*-------------------------- this set the form --------------------------*/
   const handleChange = (event) => {
     let newProp = isForm;
     newProp[event.target.name] = event.target.value;
     setIsForm({ ...newProp })
   }
 
+  /*------------This const check the obj there is value or not ------------*/
   const handleSubmit = (event) => {
     event.preventDefault()
     let emptyValues = Object.values(isForm).some(obj => obj == "");
-
     setEmptyValue(emptyValues)
-
     if(!emptyValues){
-      /*-- Just you need to used this submit to send the information
-        event.currentTarget.submit()
-        fetch('http:website', {method: "POST", body: JSON.stringify(form) })
-      --*/
       setIsModalVisible(false)
     }
   }
@@ -112,11 +105,11 @@ function App() {
             setIsEmoji={setIsEmoji}
           />
           <div className='modal-component'>
-              <form onSubmit={(event) => handleSubmit(event)}>
+              <form className='form-name' onSubmit={(event) => handleSubmit(event)}>
                 <input className='input-name' type="text" id="fname" name="name" onBlur={(event) => handleChange(event)}/>
                 <button type='submit' className='btn-submit'>Submit</button>
-                { emptyValue && isForm["name"] == "" ? <span className='emptyText'>Put you name please</span> : "" }
               </form>
+              { emptyValue && isForm["name"] == "" ? <span className='empty-text'>Put you name please</span> : "" }
           </div>
         </Modal>: 
         null

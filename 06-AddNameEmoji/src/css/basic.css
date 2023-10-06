@@ -125,8 +125,8 @@ option{
 .modal{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
-    padding: 4%;
+    margin-top: 3%;
+    padding: 2%;
     background-color: #fff;
     border-radius: 10px;
     width: 40%;
@@ -141,13 +141,34 @@ option{
 .input-name {
     display: flex;
     align-items: center;
-    margin-right: 5%;
-    width: 50%;
+    margin-right: 3%;
+    width: 70%;
 }
 
 .modal-component {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 3%;
+    align-items: center;
+    margin-top: 2%;
+    padding: 0;
+}
+
+.form-name{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-submit{
+    border: none;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.empty-text{
+    padding-top: 1%;
+    color: #FF0000;
 }
