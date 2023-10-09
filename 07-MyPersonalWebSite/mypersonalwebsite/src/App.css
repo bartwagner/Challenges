@@ -1,0 +1,209 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/*----------------------------- Navbar css -----------------------------*/
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  float: left;
+  z-index: 9999;
+  position: fixed;
+}
+
+.nav-logo{
+  display: flex;
+  padding: 20px 0;
+  width: 100px;
+  height: 60px;
+}
+
+.nav-div-par{
+  padding: 35px 0;
+}
+
+@media screen and (min-width:1420px){
+  .link-ul li{
+    width: 8%;
+    font-size: 80%;
+    padding: 42.5px 30px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  }
+  .nav-link{
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-ul{
+    width: 70%;
+    height: 100px;
+    float: left;
+  }
+  .nav-par{
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width:1210px) and (max-width:1419px){
+  .link-ul li{
+    width: 8%;
+    font-size: 80%;
+    padding: 42.5px 30px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  }
+  .nav-link{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-ul{
+    width: 80%;
+    height: 100px;
+    float: left;
+  }
+  .nav-par{
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width:860px) and (max-width:1209px){
+  .link-ul li{
+    width: 8%;
+    font-size: 70%;
+    padding: 44px 25px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  }
+  .nav-link{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-ul{
+    width: 90%;
+    height: 100px;
+    float: left;
+  }
+  .nav-par{
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width:590px) and (max-width:859px){
+  .link-ul li{
+    width: 7%;
+    font-size: 50%;
+    padding: 46px 12px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  }
+  .nav-link{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .link-ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    float: left;
+  }
+  .nav-par{
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:589px){
+  .link-ul li{
+    width: 30%;
+    padding: 0px 35px;
+    font-size: 78%;
+    list-style: none;
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  }
+  .nav-link{
+    width: 100%;
+  }
+  .link-ul{
+    width:100%;
+  }
+  .nav-par{
+    color: #fff;
+    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+    font-size: 8px;
+  }
+}
+
+.link-ul li:hover{
+  background-color: #ffea00;
+  transition: all 0.3s;
+  color: #414146;
+  cursor: pointer;
+}
+
+/*---------------------------- Body Website ----------------------------*/
+.main{
+  width: 100%;
+  height: auto;
+  float:left;
+  margin-top: 100px;
+  background-color: #414146;
+}
+
+.container{
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  text-align: justify;
+  background-color: #fff;
+}
+
+/*--------------------------Welcome Component --------------------------*/
+.welcome-div{
+  padding-bottom: 10px;
+}
+
+.welcome-developer{
+  width: 100%;
+  height: 100%;
+}
