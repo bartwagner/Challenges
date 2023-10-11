@@ -14,24 +14,114 @@
   z-index: 9999;
   position: fixed;
 }
-
 .nav-logo{
   display: flex;
   padding: 20px 0;
   width: 100px;
   height: 60px;
 }
-
 .nav-div-par{
   padding: 35px 0;
 }
+.link-ul li{
+  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+.link-ul li:hover{
+  background-color: #ffea00;
+  transition: all 0.3s;
+  color: #414146;
+  cursor: pointer;
+}
+.nav-par{
+  color: #fff;
+  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+}
+.link{
+  color: #fff;
+  text-decoration: none;
+}
 
+/*---------------------------- Body Website ----------------------------*/
+.main{
+  width: 100%;
+  height: auto;
+  float:left;
+  margin-top: 100px;
+  background-color: #414146;
+}
+.container{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+  text-align: justify;
+  background-color: #fff;
+}
+.obj-comp{
+  padding: 0px 3%;
+}
+.comp-subpar{
+  color: #62666f;
+  padding: 2% 0%;
+}
+.comp-paragraph-value{
+  padding: 1% 2%;
+}
+.comp-container{
+  display: flex;
+  align-items: center;
+}
+.hr-stripe{
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid #62666f;
+  width: 80%;
+}
+
+/*--------------------------Welcome Component --------------------------*/
+.welcome-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-developer{
+  width: 100%;
+  height: 100%;
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  align-items: center;
+}
+
+/*------------------------------ About Me ------------------------------*/
+.photo-wagner{
+  width: 25%;
+  height: 25%;
+}
+
+/*----------------------------- Experience -----------------------------*/
+.comp-paragraph-job{
+  padding-left: 1%;
+  padding-top: 1.5%;
+}
+.comp-paragraph-period{
+  padding-left: 1%;
+  margin-bottom: -0.5%;
+}
+
+/*---------------------------- Media screen ----------------------------*/
 @media screen and (min-width:1420px){
+  /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
     width: 8%;
     font-size: 80%;
     padding: 42.5px 30px;
-    list-style: none;
     float: left;
     text-align: center;
   }
@@ -49,21 +139,20 @@
     float: left;
   }
   .nav-par{
-    color: #fff;
-    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
     font-size: 13px;
   }
+  /*-------------------------Welcome Component -------------------------*/
   .welcome{
     font-size: 70px;
+    text-shadow: 4px 4px 20px #000, 0px 0px 20px #000;
   }
 }
-
 @media screen and (min-width:1210px) and (max-width:1419px){
+  /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
     width: 8%;
     font-size: 80%;
     padding: 42.5px 30px;
-    list-style: none;
     float: left;
     text-align: center;
   }
@@ -81,18 +170,20 @@
     float: left;
   }
   .nav-par{
-    color: #fff;
-    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
     font-size: 13px;
   }
+  /*-------------------------Welcome Component -------------------------*/
+  .welcome{
+    font-size: 65px;
+    text-shadow: 3px 3px 18px #000, 0px 0px 18px #000;
+  }
 }
-
 @media screen and (min-width:860px) and (max-width:1209px){
+  /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
     width: 8%;
     font-size: 70%;
     padding: 44px 25px;
-    list-style: none;
     float: left;
     text-align: center;
   }
@@ -110,18 +201,20 @@
     float: left;
   }
   .nav-par{
-    color: #fff;
-    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
     font-size: 11px;
   }
+  /*-------------------------Welcome Component -------------------------*/
+  .welcome{
+    font-size: 55px;
+    text-shadow: 2px 2px 15px #000, 0px 0px 15px #000;
+  }
 }
-
 @media screen and (min-width:590px) and (max-width:859px){
+  /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
     width: 7%;
     font-size: 50%;
     padding: 46px 12px;
-    list-style: none;
     float: left;
     text-align: center;
   }
@@ -139,20 +232,22 @@
     float: left;
   }
   .nav-par{
-    color: #fff;
-    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
     font-size: 8px;
   }
+  /*-------------------------Welcome Component -------------------------*/
+  .welcome{
+    font-size: 40px;
+    text-shadow: 1px 1px 12px #000, 0px 0px 12px #000;
+  }
 }
-
 @media screen and (min-width:0px) and (max-width:589px){
+  /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
     display: flex;
     justify-content: flex-end;
     width: 90%;
     padding: 0px 0px;
     font-size: 78%;
-    list-style: none;
   }
   .nav-link{
     width: 100%;
@@ -163,60 +258,11 @@
     width:100%;
   }
   .nav-par{
-    color: #fff;
-    font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
     font-size: 8px;
   }
-}
-
-.link-ul li{
-  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
-  color: #fff;
-}
-
-.link-ul li:hover{
-  background-color: #ffea00;
-  transition: all 0.3s;
-  color: #414146;
-  cursor: pointer;
-}
-
-/*---------------------------- Body Website ----------------------------*/
-.main{
-  width: 100%;
-  height: auto;
-  float:left;
-  margin-top: 100px;
-  background-color: #414146;
-}
-
-.container{
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
-  text-align: justify;
-  background-color: #fff;
-}
-
-/*--------------------------Welcome Component --------------------------*/
-.welcome-div{
-  display: flex;
-  padding-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome-developer{
-  width: 100%;
-  height: 100%;
-}
-
-.welcome{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  color: #fff;
-  align-items: center;
+  /*-------------------------Welcome Component -------------------------*/
+  .welcome{
+    font-size: 30px;
+    text-shadow: 1px 1px 9px #000, 0px 0px 9px #000;
+  }
 }
