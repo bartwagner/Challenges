@@ -11,22 +11,22 @@ export default function Navbar() {
             <div className="nav-link">
                 <ul className="link-ul">
                     <li>
-                        <a href="#home" className="link">Home</a>
+                        <a href="/" className="link">Home</a>
                     </li>
                     <li>
-                        <a href="#aboutMe" className="link">About Me</a>
+                        <a href="/aboutMe" className="link">About Me</a>
                     </li>
                     <li>
-                        <a href="#experience" className="link">Experience</a>
+                        <a href="/experience" className="link">Experience</a>
                     </li>
                     <li>
-                        <a href="#projects" className="link">Projects</a>
+                        <a href="/projects" className="link">Projects</a>
                     </li>
                     <li>
-                        <a href="#skills" className="link">Skills</a>
+                        <a href="/skills" className="link">Skills</a>
                     </li>
                     <li>
-                        <a href="#contact" className="link">Contact</a>
+                        <a href="/contact" className="link">Contact</a>
                     </li>
                 </ul>
             </div>

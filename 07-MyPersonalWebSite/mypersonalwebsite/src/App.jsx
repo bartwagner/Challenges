@@ -1,34 +1,44 @@
 import React from "react"
 import Navbar from './components/Navbar'
-import Welcome from './components/Welcome'
+import Home from './components/Home'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import Stripe from './components/subcomponents/Stripe'
 import './App.css'
-
 
 function App() {
 
+  let component
+  switch (window.location.pathname) {
+    case '/':
+      component = <Home />
+      break;
+    case '/aboutMe':
+      component = <AboutMe />
+      break;
+    case '/experience':
+      component = <Experience />
+      break;
+    case '/projects':
+      component = <Projects />
+      break;
+    case '/skills':
+      component = <Skills />
+      break;
+    case '/contact':
+      component = <Contact />
+      break;
+  }
 
   return (
     <div>
       <Navbar />
       <div className='main'>
         <div className='container'>
-          <Welcome />
           <div className='obj-comp'>
-            <AboutMe />
-            <Stripe />
-            <Experience />
-            <Stripe />
-            <Projects />
-            <Stripe />
-            <Skills />
-            <Stripe />
-            <Contact />
+            {component}
           </div>
         </div>
       </div>
