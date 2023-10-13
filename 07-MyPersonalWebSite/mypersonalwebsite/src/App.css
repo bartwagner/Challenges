@@ -100,6 +100,11 @@
   justify-content: center;
 }
 
+/*------------------------------ About me ------------------------------*/
+.grid-div{
+  font-family: 'OswaldLight', Arial, Helvetica, sans-serif;
+}
+
 /*----------------------------- Experience -----------------------------*/
 .comp-paragraph-job{
   padding-left: 1%;
@@ -108,6 +113,31 @@
 .comp-paragraph-period{
   padding-left: 1%;
   margin-bottom: -0.5%;
+}
+
+/*------------------------------ Projects ------------------------------*/
+.project-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card{
+  margin: 5% 5%;
+  width: 50%;
+  height: 50%;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.project-inf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 10%;
+  padding: 10% 10%;
+}
+.itau-img{
+  width: 80%;
+  height: 80%;
 }
 
 /*---------------------------- Media screen ----------------------------*/
@@ -141,6 +171,12 @@
     font-size: 70px;
     text-shadow: 4px 4px 20px #000, 0px 0px 20px #000;
   }
+  /*------------------------------ About me ------------------------------*/
+  .grid-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 100%;
+  }
 }
 @media screen and (min-width:1210px) and (max-width:1419px){
   /*---------------------------- Navbar css ----------------------------*/
@@ -171,6 +207,12 @@
   .welcome{
     font-size: 65px;
     text-shadow: 3px 3px 18px #000, 0px 0px 18px #000;
+  }
+  /*------------------------------ About me ------------------------------*/
+  .grid-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 90%;
   }
 }
 @media screen and (min-width:860px) and (max-width:1209px){
@@ -203,6 +245,12 @@
     font-size: 55px;
     text-shadow: 2px 2px 15px #000, 0px 0px 15px #000;
   }
+  /*------------------------------ About me ------------------------------*/
+  .grid-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 75%;
+  }
 }
 @media screen and (min-width:590px) and (max-width:859px){
   /*---------------------------- Navbar css ----------------------------*/
@@ -234,6 +282,12 @@
     font-size: 40px;
     text-shadow: 1px 1px 12px #000, 0px 0px 12px #000;
   }
+  /*------------------------------ About me ------------------------------*/
+  .grid-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 90%;
+  }
 }
 @media screen and (min-width:0px) and (max-width:589px){
   /*---------------------------- Navbar css ----------------------------*/
@@ -259,5 +313,11 @@
   .welcome{
     font-size: 30px;
     text-shadow: 1px 1px 9px #000, 0px 0px 9px #000;
+  }
+  /*------------------------------ About me ------------------------------*/
+  .grid-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 70%;
   }
 }

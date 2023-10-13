@@ -45,14 +45,26 @@ export default [
     },
     {
         id:"12",
-        value:""
+        value:"I received an invitation to join the insurance company Banco do Brasil and Mapfre, where I worked alongside the business consulting team. In this role, I led projects using both traditional and agile approaches, assisting the development team. I utilized a variety of technologies, including Visual Basic 6, .NET, Java, Oracle, SoapUI, and SQL Server."
     },
     {
         id:"13",
-        value:""
+        value:"After these projects, in which I worked as a developer and, at times, as a project manager, I transitioned into a more dedicated role as a Scrum Master. I took on this role in projects for companies such as Porto Seguro, Via Varejo, and Sinqia."
     },
     {
         id:"14",
-        value:""
+        value:"After over a year of involvement in an agility pilot project at Sinqia, I was invited to take on the role of Agile Coach. In this capacity, I conducted training sessions and provided support to various teams."
+    },
+    {
+        id:"15",
+        value:"During the pandemic, I began looking for remote work opportunities and resumed my position as a Scrum Master at companies like CashMe and later at Renner."
+    },
+    {
+        id:"16",
+        value:"Currently, I am actively seeking a new opportunity in the development field. I have a longstanding passion for development and have never ceased working on small personal projects to keep my skills up to date."
+    },
+    {
+        id:"17",
+        value:"Recently, I completed a bootcamp at Renzoku in Victoria, where I updated my knowledge in technologies such as React, Python with Django, Angular, and Ruby on Rails."
     },
 ]
