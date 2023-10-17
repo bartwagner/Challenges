@@ -79,16 +79,16 @@
 }
 
 /*--------------------------- Home Component ---------------------------*/
-.welcome-div{
+.dev-img-div{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.welcome-developer{
+.dev-img{
   width: 100%;
   height: 100%;
 }
-.welcome{
+.dev-text{
   display: flex;
   justify-content: center;
   position: absolute;
@@ -140,6 +140,50 @@
   height: 80%;
 }
 
+/*-------------------------------Contact -------------------------------*/
+.contact-inf{
+  display: flex;
+  margin: 2% 0;
+}
+.github-inf{
+  margin: 2% 0;
+}
+.social-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-midia{
+  margin: 5% 5%;
+  width: 100%;
+  height: 100%;
+}
+.social-link{
+  margin: 5% 5%;
+  width: 10%;
+  height: 10%;
+}
+
+/*------------------------------- Footer -------------------------------*/
+.footer-body{
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.footer-personal{
+  display: flex;
+  justify-content: center;
+  margin: 2% 0;
+}
+.footer-text{
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  margin: 1.5% 0;
+}
+
 /*---------------------------- Media screen ----------------------------*/
 @media screen and (min-width:1420px){
   /*---------------------------- Navbar css ----------------------------*/
@@ -166,8 +210,8 @@
   .nav-par{
     font-size: 13px;
   }
-  /*-------------------------Welcome Component -------------------------*/
-  .welcome{
+  /*-------------------------- Image Developer--------------------------*/
+  .dev-text{
     font-size: 70px;
     text-shadow: 4px 4px 20px #000, 0px 0px 20px #000;
   }
@@ -181,7 +225,12 @@
   .p-project{
     font-size: 13px;
   }
+  /*------------------------------- Footer -------------------------------*/
+  .footer-personal{
+    font-size: 300%;
+  }
 }
+
 @media screen and (min-width:1210px) and (max-width:1419px){
   /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
@@ -207,8 +256,8 @@
   .nav-par{
     font-size: 13px;
   }
-  /*-------------------------Welcome Component -------------------------*/
-  .welcome{
+  /*-------------------------- Image Developer--------------------------*/
+  .dev-text{
     font-size: 65px;
     text-shadow: 3px 3px 18px #000, 0px 0px 18px #000;
   }
@@ -222,7 +271,12 @@
   .p-project{
     font-size: 13px;
   }
+  /*------------------------------- Footer -------------------------------*/
+  .footer-personal{
+    font-size: 300%;
+  }
 }
+
 @media screen and (min-width:860px) and (max-width:1209px){
   /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
@@ -248,8 +302,8 @@
   .nav-par{
     font-size: 11px;
   }
-  /*-------------------------Welcome Component -------------------------*/
-  .welcome{
+  /*-------------------------- Image Developer--------------------------*/
+  .dev-text{
     font-size: 55px;
     text-shadow: 2px 2px 15px #000, 0px 0px 15px #000;
   }
@@ -259,11 +313,16 @@
     grid-template-columns: 50% 50%;
     font-size: 75%;
   }
-    /*------------------------------ Projects ------------------------------*/
-    .p-project{
-      font-size: 11px;
-    }
+  /*------------------------------ Projects ------------------------------*/
+  .p-project{
+    font-size: 11px;
+  }
+  /*------------------------------- Footer -------------------------------*/
+  .footer-personal{
+    font-size: 200%;
+  }
 }
+
 @media screen and (min-width:590px) and (max-width:859px){
   /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
@@ -289,8 +348,8 @@
   .nav-par{
     font-size: 8px;
   }
-  /*-------------------------Welcome Component -------------------------*/
-  .welcome{
+  /*-------------------------- Image Developer--------------------------*/
+  .dev-text{
     font-size: 40px;
     text-shadow: 1px 1px 12px #000, 0px 0px 12px #000;
   }
@@ -300,11 +359,16 @@
     flex-direction: column;
     font-size: 90%;
   }
-    /*------------------------------ Projects ------------------------------*/
-    .p-project{
-      font-size: 9px;
-    }
+  /*------------------------------ Projects ------------------------------*/
+  .p-project{
+    font-size: 9px;
+  }
+  /*------------------------------- Footer -------------------------------*/
+  .footer-personal{
+    font-size: 200%;
+  }
 }
+
 @media screen and (min-width:0px) and (max-width:589px){
   /*---------------------------- Navbar css ----------------------------*/
   .link-ul li{
@@ -325,8 +389,8 @@
   .nav-par{
     font-size: 8px;
   }
-  /*-------------------------Welcome Component -------------------------*/
-  .welcome{
+  /*-------------------------- Image Developer--------------------------*/
+  .dev-text{
     font-size: 30px;
     text-shadow: 1px 1px 9px #000, 0px 0px 9px #000;
   }
@@ -339,5 +403,9 @@
   /*------------------------------ Projects ------------------------------*/
   .p-project{
     font-size: 8px;
+  }
+  /*------------------------------- Footer -------------------------------*/
+  .footer-personal{
+    font-size: 150%;
   }
 }
