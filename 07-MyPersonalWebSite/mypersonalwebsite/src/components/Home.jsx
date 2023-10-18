@@ -12,12 +12,11 @@ export default function Home() {
                 />
         )
     })
-
     return (
         <section>
-            <div className="welcome-div">
-                <img src="./src/images/developer.png" className="welcome-developer" />
-                <h1 className="welcome">Welcome</h1>
+            <div className="dev-img-div">
+                <img src="./src/images/developer.png" className="dev-img" />
+                <h1 className="dev-text">Welcome</h1>
             </div>
             <h1 className="comp-subpar">Home</h1>
             <div className="center-photo">
