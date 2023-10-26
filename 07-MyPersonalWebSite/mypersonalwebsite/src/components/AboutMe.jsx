@@ -36,7 +36,7 @@ export default function AboutMe() {
                 <div>
                     {aboutMeParagraph}
                 </div>
-                <img src="./src/images/wagner.jpg" className="photo-wagner" />
+                <img src="./src/images/wagner.png" className="photo-wagner" />
             </div>
             <h1 className="comp-subpar">Certifications</h1>
             <div className="grid-div">
