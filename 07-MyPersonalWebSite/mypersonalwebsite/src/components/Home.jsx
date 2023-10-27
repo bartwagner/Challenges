@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             <h1 className="comp-subpar">Home</h1>
             <div className="center-photo">
-                <img src="./src/images/wagner.jpg" className="photo-wagner" />
+                <img src="./src/images/wagner.png" className="photo-wagner" />
             </div>
             <div>
                 {homeParagraph}

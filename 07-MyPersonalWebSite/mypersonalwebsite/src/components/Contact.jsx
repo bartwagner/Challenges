@@ -21,7 +21,7 @@ export default function Contact() {
             <div className="comp-container">
                 <div className="flex">
                     <div className="contact-inf">
-                        <img src="./src/images/wagner.jpg" className="photo-wagner" />
+                        <img src="./src/images/wagner.png" className="photo-wagner" />
                         <div>
                             {contactParagraph}
                             <div className="social-div">
