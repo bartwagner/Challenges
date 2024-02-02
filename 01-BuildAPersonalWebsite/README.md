@@ -10,4 +10,8 @@ I am Wagner, worked for more than 10 years in IT. (Linkedin: https://www.linkedi
 
 In this example, you can use it to make your site look completely dynamic, fonts, styles, images, and others.
 
-Happy Coding!
+to start the server, install the live server first.
+
+after that, you will see Go Live bellow on the right.
+
+Click in Go Live and that is it.
