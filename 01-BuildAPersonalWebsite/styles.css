@@ -85,7 +85,7 @@ option{
     justify-content: space-around;
 }
 
-.form--label{
+.label--div{
     margin-top: 5%;
 }
 
@@ -103,7 +103,7 @@ option{
     padding-top: 5%;
 }
 
-.main--form, form{
+.combo--div, .main--div{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
+        <!--Meta-->
         <meta charset="UTF-8" />
-        <title>Personal Website</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Meta-->
+        <!--Links-->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
         <link rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet" />
+        <!--Links-->
+        <!--Script-->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="index.js"></script>
+        <!--Script-->
+        <!--Title-->
+        <title>Personal Website</title>
+        <!--Title-->
     </head>
     <body>
         <div class="all--page">
+            <!--Div about my information-->
             <div class="information--personal">
                 <img src="Image/wagner.jpg">
                 <h1>Hi, my name is Wagner</h1>
@@ -26,11 +36,14 @@
                 </form>
                 <button onclick="sendEmail()">Join newsletter</button>
             </div>
+            <!--Div about my information-->
+            <!--Enchanging the formatting of the site-->
             <div class="select--object">
-                <main className='main--form'>
+                <main class='main--div'>
                     <h3>Have fun exchanging the formatting of the site</h3>
-                    <form className='form'>
-                        <label class="form--label">Kind of font</label>
+                    <!--Exchanging Kind of font-->
+                    <div class='combo--div'>
+                        <label class="label--div">Kind of font</label>
                         <select class="combo"
                             onchange="favouriteMovieGenre(this.value);"
                         >
@@ -43,9 +56,11 @@
                             <option value="fantasy">Fantasy</option>
                             <option value="superhero">Superhero</option>  
                         </select>
-                    </form>
-                    <form className='form'>
-                        <label class="form--label">Colors</label>
+                    </div>
+                    <!--Exchanging Kind of font-->
+                    <!--Exchanging Kind of colors-->
+                    <div class='combo--div'>
+                        <label class="label--div">Colors</label>
                         <select class="combo"
                             onchange="favouriteFruit(this.value);"
                         >
@@ -57,18 +72,22 @@
                             <option value="avocado">Avocado</option>
                             <option value="blueberry">Blueberry</option>
                         </select>
-                    </form>
-                    <form className='form'>
-                        <label class="form--label">Colors(Dark or Light)</label>
+                    </div>
+                    <!--Exchanging Kind of colors-->
+                    <!--Exchanging Kind of colors(Dark or Light)-->
+                    <div class='combo--div'>
+                        <label class="label--div">Colors(Dark or Light)</label>
                         <select class="combo"
                             onchange="favouriteMode(this.value);"
                         > 
                             <option value="dark" selected="selected">Dark</option>  
                             <option value="light">Light</option>
                         </select>
-                    </form>
-                    <form className='form'>
-                        <label class="form--label">Style photo</label>
+                    </div>
+                    <!--Exchanging Kind of colors(Dark or Light)-->
+                    <!--Exchanging Kind of Style photo-->
+                    <div class='combo--div'>
+                        <label class="label--div">Style photo</label>
                         <select class="combo"
                             onchange="favouriteEdgeStyle(this.value);"
                         >
@@ -76,9 +95,11 @@
                             <option value="sharp">Sharp</option>
                             <option value="soft">Soft</option>
                         </select>
-                    </form>
+                    </div>
+                    <!--Exchanging Kind of Style photo-->
                 </main>
             </div>
+            <!--Enchanging the formatting of the site-->
         </div>
     </body>
 </html>
