@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
-	<title>The Daily Dribble</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!--Meta-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Meta-->
+        <!--Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="styles.css">
+        <!--Link-->
+        <!--Script-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="index.js"></script>
+        <!--Script-->
+        <!--Title-->
+        <title>The Daily Dribble</title>
+        <!--Title-->
     </head>
     <body>
         <div class="organizer">
             <h1>THE DAILY DRIBBLE</h1>
             <img src="Image/stadium.jpg" class="stadium-img"/>
             <p>Your daily dose of soccer stories from on and off the pitch. interviews, analyses, breaking news and more!</p>
+            <!--Email div-->
             <div class="email-group">
-                <input type="text" class="email-text" placeholder="ENTER YOUR EMAIL">
-                <button class="email-button"> JOIN NOW</button>
+                <form method="post">
+                    <input type="text" id="textinput" class="email-text" placeholder="ENTER YOUR EMAIL">
+                </form>
+                <button class="black-button" onclick="sendEmail()">JOIN NOW</button>
             </div>
+            <!--Email div-->
             <p class="terms"> Read our
-                <a href="" class="terms-link">terms of service.</a>
+                <a href="terms.html" class="terms-link">terms of service.</a>
             </p>
         </div>
     </body>
